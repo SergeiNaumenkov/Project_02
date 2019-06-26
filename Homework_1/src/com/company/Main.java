@@ -5,21 +5,20 @@ public class Main
 
     public static void main(String[] args)
       {
+          int sum = 0;
+          int kol=0;
           int[] array = new int[10];
           System.out.print("MASSIV:");
-          for(int i = 0; i < array.length; i++) {
+          for(int i = 0; i < array.length; i++)
+          {
               array[i] = (int) (Math.random() * 5  + 1);
+              sum += array[i];
+              if(array[i] == 3) kol++;
               System.out.print(" ");
               System.out.print(array[i]);
           }
-          int sum = 0;
-          for(int i = 0; i < array.length; i++)
-              sum = sum + array[i];
           System.out.println();
           System.out.println("SUMMA=" + sum);
-          int kol=0;
-          for(int i = 0; i < array.length; i++)
-           if(array[i] == 3) kol++;
           System.out.println("KOLICHESTVO TROEC=" + kol);
           int a1=0, a2=0, a3=0, a4=0, a5=0;
           for(int i = 0; i < array.length; i++)

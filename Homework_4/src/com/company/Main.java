@@ -16,8 +16,7 @@ public class Main {
         {
             if(array[i]%2==0)
                 sum_c += array[i];
-            else if(array[i]%2!=0)
-                sum_n += array[i];
+            else sum_n += array[i];
         }
         System.out.println();
         System.out.println("Summa chetnih=" + sum_c);
