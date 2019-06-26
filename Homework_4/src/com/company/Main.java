@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         int[] array = new int[15];
-        System.out.print("MASSIV: ");
-        for (int i = 0; i < array.length; i++) {
+        System.out.print("MASSIVV: ");
+        for (int i = 0; i < array.length; i++)
+        {
             array[i] = (int) (Math.random() * 10);
             System.out.print(" ");
             System.out.print(array[i]);
